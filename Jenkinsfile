@@ -4,8 +4,8 @@ pipeline {
   stages {
   	stage('Maven Install') {
     	agent {
-      	dockerContainer {
-        	image 'maven:3.5.0'
+      	docker {
+        	image 'maven:3.9.1-eclipse-temurin-17'
         }
       }
       steps {
